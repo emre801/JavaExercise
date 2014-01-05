@@ -5,10 +5,15 @@ JavaExercise
 This code will run in O(n) time. It would iterate through the collection adding all the weights together to find the total weight.
 Then it would pick a random number from 0 to Total Weight. The ads with the greater weight have a high chance of being selected.
 For instance look at this example
+
 placement_id | ad_id | weight
+
 2 | 101 | 20
+
 2 | 102 | 20
+
 2 | 100 | 10
+
 
 101 will get the range 0-19,102 will get 20-39, and 100 will get the range 40-49.
 Any number picked from those will result in the corresponding ads being chosen. The higher weights will being given a greater range resulting in that ad being picked more often.
